@@ -1,9 +1,11 @@
 const express=require('express')
 const cors=require('cors')
+const jwt=require('jwt')
 const dotenv=require('dotenv').config();
 const hello=require('./config/config')
 const app=express();
 hello();
+
 app.use(cors())
 app.use(express.json())
 
